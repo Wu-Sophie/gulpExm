@@ -1,0 +1,12 @@
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// 设定字体大小为rem，兼容ie8
+@mixin font-size($px) {
+    font-size: $px;
+    font-size: ($px / $RFS) * 1rem;
+}
